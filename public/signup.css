@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+/*body class*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    padding: 10px;
+}
+
+#wrapper {
+    /* max-height: 85vh; */
+    width: 100%;
+    max-width: 400px;
+    /* overflow-y: auto; */
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: #ffe0e0;
+}
+#wrapper .creat-an-account {
+    /* position: relative; */
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/*input class*/
+#wrapper .input-text {
+    margin:  10px 0;
+    padding: 8px;
+    border-bottom: 1px solid gray;
+    border-radius: 10px;
+    background-color: #ffe0e0;
+    position: relative;
+
+}
+
+.input-text input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: black;
+    outline: none;
+    border: none;
+    /* background-color: #ffe0e0; */
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: text;
+}
+
+.input-text ::placeholder {
+    color: gray;
+}
+
+.input-text input:hover::placeholder {
+    color: blue;
+    transition: color 0.3s ease;
+}
+
+#wrapper .submit {
+    margin: 10px auto;
+    padding: 10px 20px;
+    display: block;
+    height: auto;
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+}
+
+#wrapper h3 {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#wrapper h3 a {
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fa4299;
+    font-size: 25px;
+}
+
+#wrapper h3 a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Glowing effect */
+.submit:hover {
+    border: 1px solid blue;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+.input-text:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+ @media screen and (max-width: 768px) { 
+    #wrapper {
+        width: 90vw;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #wrapper .creat-an-account {
+        font-size: 20px;
+    }
+
+    #wrapper h3 a {
+        font-size: 20px;
+    }
+
+    #wrapper .submit {
+        width: auto;
+        height: auto;
+    }
+}

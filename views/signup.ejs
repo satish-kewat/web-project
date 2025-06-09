@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="wrapper">
+        <form action="/signup" method="post">
+        <h1 class="creat-an-account">Creat an anncount</h1>
+        <div class="input-text">
+            <label for="First Name"></label>
+            <input type="text" id="First Name" name="firstname" placeholder="First Name">
+        </div>
+
+        <div class="input-text">
+            <label for="Last Name"></label>
+            <input type="text" id="Last Name" name="lastname" placeholder="Last Name">
+        </div>
+
+        <div class="input-text">
+            <label for="email"></label>
+            <input type="email" id="email" name="useremail" placeholder="Email Id">
+        </div>
+
+        <div class="input-text">
+            <label for="dob"></label>
+            <input type="date" id="dob" name="dob" placeholder="Birth Date">
+        </div>
+
+        <div class="input-text">
+            <label for="ph.no"></label>
+            <input type="input" id="ph.no" name="phonenumber" placeholder="Phone Number" maxlength="10">
+        </div>
+        <div class="input-text">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <div class="input-text">
+            <label for="Confirmpassword"></label>
+            <input type="password" id="Confirmpassword" name="Confirmpassword" placeholder="Confirm Password">
+        </div>
+        <!-- <div class="submit"> -->
+            <input class="submit" type="submit">
+        <!-- </div> -->
+        <h3>Already have an account?<a href="/login">Login</a></h3>
+        
+    </form>
+    </div>
+    
+</body>
+</html>
